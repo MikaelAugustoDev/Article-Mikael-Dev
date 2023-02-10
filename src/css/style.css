@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --color1: hsl(217, 19%, 35%);
+    --color2: hsl(214, 17%, 51%);
+    --color3: hsl(212, 23%, 69%);
+    --color4: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.container .esquerda {
+    width: 40%;
+    height: 100%;
+}
+
+.container .direita {
+    width: 60%;
+    height: 100%;
+}
+
+.container .imagem {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/drawers.jpg);
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.container .imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .textos {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .textos h1 {
+    color: var(--color1);
+    width: 80%;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.container .textos p {
+    color: var(--color2);
+    width: 80%;
+    margin-left: 0px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.container .compartilhar {
+    width: 100%;
+    height: 30%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .compartilhar .card {
+    width: 80%;
+    height: 50%;
+    display: flex;
+}
+
+.container .compartilhar .card img {
+    border-radius: 100%;
+}
+
+.container .compartilhar .card h2 {
+    color: var(--color1);
+    font-size: 18px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.container .compartilhar .card p {
+    height: 25px;
+    margin-left: -156px;
+    margin-top: 35px;
+    color: var(--color2);
+}
+
+.container .compartilhar .card .enviar {
+    position: absolute;
+    height: 50px;
+    left: 79%;
+    top: 72%;
+    width: 50px;
+    border-radius: 100%;
+    z-index: 0;
+}
+
+.container .compartilhar .card .enviar button {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: none;
+    z-index: 5;
+}
+
+.container .compartilhar .card .enviar button img {
+   width: 40%;
+   z-index: 5;
+}
+
+.container .compartilhar .card .enviar button:hover {
+    cursor: pointer;
+}
+
+.container .compartilhar .card .enviar .redes-sociais {
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--color1);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    top: -100px;
+    left: -100px;
+    display: none;
+    z-index: 0;
+}
+
+.container .compartilhar .card .enviar .redes-sociais img{
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+    margin-right: -5px;
+}
+
+.container .compartilhar .card .enviar .redes-sociais h3 {
+    color: var(--color3);
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-left: -10px;
+}
+
+.container .compartilhar .card .enviar .redes-sociais .balao {
+    background-color: var(--color1);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 34px;
+    z-index: 0;
+    transform: rotate(45deg);
+}
